@@ -1,5 +1,8 @@
 public class Division {
     public double dividir(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("No se puede dividir entre cero.");
+        }
         return a / b;
     }
 }
